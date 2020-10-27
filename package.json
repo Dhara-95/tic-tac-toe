@@ -12,6 +12,7 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/jest-dom": "^5.11.5",
@@ -26,8 +27,17 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-hot-loader": "^4.3.11"
+  },
+  "plugins": [
+    "@babel/plugin-syntax-jsx"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }

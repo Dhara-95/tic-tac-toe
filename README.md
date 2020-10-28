@@ -18,6 +18,7 @@ To run the app open the 'public/index.html' file in your web browser.
 
 ## Running the Tests
 Run the follwing command in the terminal to see run the tests:
+*(Jest testing framework used)*
 
 ```
 $ npm test
